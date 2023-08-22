@@ -15,7 +15,7 @@ const GithubPage = ({ repos, user }) => {
 
   return (
     <>
-      <a href="https://github.com/drkostas" target="_blank" rel="noopener" className={styles.no_color}>
+      <a href="https://github.com/ErikBahena" target="_blank" rel="noopener" className={styles.no_color}>
         <div className={styles.user}>
           <div>
             <Image
@@ -59,24 +59,15 @@ const GithubPage = ({ repos, user }) => {
 
 export async function getStaticProps() {
   const userRes = await fetch(
-    `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}`,
-    {
-      headers: {
-        Authorization: `token ${process.env.GITHUB_API_KEY}`,
-      },
-    }
+    `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}`
   );
   const user = await userRes.json();
 
   const repoRes = await fetch(
     `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/repos?per_page=100`,
-    {
-      headers: {
-        Authorization: `token ${process.env.GITHUB_API_KEY}`,
-      },
-    }
   );
   let repos = await repoRes.json();
+
   repos = repos
     .sort((a, b) => {
       if (a.html_url.includes('EESTech') || a.html_url.includes('COSC')) {

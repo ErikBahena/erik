@@ -1,10 +1,10 @@
 import data from './bots-projects.json';
 
-export const getBotsProjects = () => {
+export const getCssProjects = () => {
   return data;
 };
 
 export default (req, res) => {
-  const projects = getBotsProjects();
+  const projects = getCssProjects();
   res.json(projects);
 };

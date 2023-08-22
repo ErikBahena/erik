@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "La Galeria",
+    "image": "https://imgur.com/Eqa1f7j.gif",
+    "description": "Showcases a collection of famous art pieces from various artists in a gallery style.",
+    "tags": ["Next-js", "Tailwind-Css", "Html", "Css", "JavaScript"],
+    "source_code": "https://github.com/ErikBahena/galeria",
+    "demo": "https://galeria-mu.vercel.app/"
+  },
+  {
+    "id": 2,
+    "name": "Arun Fitness",
+    "image": "https://imgur.com/IeTx8RM.jpg",
+    "description": "Personalized Fitness Service Landing Page.",
+    "tags": ["Next-js", "Tailwind-Css", "Html", "Css", "JavaScript"],
+    "source_code": "https://github.com/ErikBahena/arun",
+    "demo": "https://arun-seven.vercel.app/"
+  },
+  {
+    "id": 3,
+    "name": "Reconco Siding",
+    "image": "https://imgur.com/pVnl9FG.jpg",
+    "description": "Siding Company Landing Page.",
+    "tags": ["Next-js", "Tailwind-Css", "Html", "Css", "JavaScript"],
+    "source_code": "https://github.com/ErikBahena/reconco_siding",
+    "demo": "https://reconco-siding.vercel.app/"
+  }
+]

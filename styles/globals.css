@@ -8,11 +8,26 @@
   box-sizing: border-box;
 }
 
+/* Progress Bar */
+#nprogress {
+  pointer-events: 'none';
+}
+
+#nprogress .bar {
+  background: var(--accent-color);
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+}
+
 /* Tags */
-.PyTorch {
+.Python {
   border: 0.1rem solid rgb(238, 89, 3);
 }
-.PyTorch:hover {
+.Python:hover {
   background: rgba(238, 89, 3, 0.25);
 }
 .OpenCV {
@@ -123,10 +138,10 @@
 .K-Means:hover {
   background: rgba(0, 0, 0, 0.25);
 }
-.Apache-Spark {
+.Tailwind-Css {
   border: 0.1rem solid rgb(170, 170, 248);
 }
-.Apache-Spark:hover {
+.Tailwind-Css:hover {
   background: rgba(170, 170, 248, 0.25);
 }
 .Social-Networks {
@@ -153,12 +168,6 @@
 .MySQL:hover {
   background: rgba(144, 151, 252, 0.25);
 }
-.Tensorflow {
-  border: 0.1rem solid rgb(239, 113, 113);
-}
-.Tensorflow:hover {
-  background: rgba(239, 113, 113, 0.25);
-}
 .LSTMs {
   border: 0.1rem solid rgb(0, 0, 0);
 }
@@ -177,10 +186,10 @@
 .Instagram:hover {
   background: rgba(255, 45, 7, 0.25);
 }
-.Data-Pipelines {
+.Html {
   border: 0.1rem solid rgb(255, 45, 7);
 }
-.Data-Pipelines:hover {
+.Html:hover {
   background: rgba(255, 45, 7, 0.25);
 }
 .Scraper {
@@ -195,10 +204,10 @@
 .CNN:hover {
   background: rgba(194, 203, 255, 0.25);
 }
-.MLOps {
+.React-js {
   border: 0.1rem solid rgb(194, 203, 255);
 }
-.MLOps:hover {
+.React-js:hover {
   background: rgba(194, 203, 255, 0.25);
 }
 .Markov-Decision-Process {
@@ -237,10 +246,10 @@
 .PyPi:hover {
   background: rgba(0, 51, 255, 0.25);
 }
-.Bots {
+.Css {
   border: 0.1rem solid rgb(0, 51, 255);
 }
-.Bots:hover {
+.Css:hover {
   background: rgba(0, 51, 255, 0.25);
 }
 .CircleCI {
@@ -444,18 +453,31 @@
 .Python:hover {
   background: rgba(50, 25, 162, 0.25);
 }
-.Research {
-  border: 0.1rem solid rgb(32, 255, 147);
-}
-.Research:hover {
-  background: rgba(32, 255, 255, 0.25);
-}
-.Computer-Vision {
+.JavaScript {
   border: 0.1rem solid rgb(232, 255, 118);
 }
-.Computer-Vision:hover {
+.JavaScript:hover {
   background: rgba(232, 255, 118, 0.25);
 }
+.Node-js {
+  border: 0.1rem solid rgb(83, 156, 85);
+}
+.Node-js:hover {
+  background: rgba(83, 156, 85, 0.25);
+}
+.Express-js {
+  border: 0.1rem solid rgb(52, 107, 89);
+}
+.Express-js:hover {
+  background: rgba(52, 107, 89, 0.25);
+}
+.Next-js {
+  border: 0.1rem solid rgb(0, 153, 255);
+}
+.Next-js:hover {
+  background: rgba(0, 153, 255, 0.25);
+}
+  
 .SQL {
   border: 0.1rem solid rgb(255, 118, 214);
 }
