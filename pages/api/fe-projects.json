@@ -25,5 +25,14 @@
     "tags": ["Next-js", "Tailwind-Css", "Html", "Css", "JavaScript"],
     "source_code": "https://github.com/ErikBahena/reconco_siding",
     "demo": "https://reconco-siding.vercel.app/"
+  }, 
+  {
+    "id": 4,
+    "name": "Space Walker",
+    "image": "https://imgur.com/bWtmqG4.gif",
+    "description": "A space themed travel agency website.",
+    "tags": ["React-js", "Tailwind-Css", "Html", "Css", "JavaScript"],
+    "source_code": "https://github.com/ErikBahena/Space-Walker-2",
+    "demo": "https://space-walker-zeta.vercel.app/home"
   }
 ]

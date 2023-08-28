@@ -4,7 +4,13 @@ import styles from '../styles/ProjectCard.module.css';
 const ProjectCard = ({ project }) => {
   return (
     <div className={styles.card}>
-      <Image src={project.image} height={300} width={600} alt={project.name} />
+      {project.demo ? (
+        <a href={project.demo} target="_blank" rel="noopener noreferrer">
+          <Image src={project.image} height={225} width={400} alt={project.name} />
+        </a>
+      ) : (
+        <Image src={project.image} height={225} width={400} alt={project.name} />
+      )}
       <div className={styles.content}>
         <h3>{project.name}</h3>
         <p>{project.description}</p>
@@ -27,14 +33,14 @@ const ProjectCard = ({ project }) => {
             </a>
           )}
           {project.demo && (
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.underline}
-          >
-            Demo
-          </a>
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.underline}
+            >
+              Demo
+            </a>
           )}
         </div>
       </div>
