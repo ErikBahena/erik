@@ -159,3 +159,29 @@
   --scrollbar-thumb-bg: #043254;
   --article-bg: #031d33;
 }
+
+[data-theme='cyberpunk'] {
+  --main-bg: #0f1320;
+  --bg-text: #1d2233;
+  --text-color: #d4d4d4;
+  --accent-color: #2da394;
+  --titlebar-bg: #0f1320;
+  --sidebar-bg: #171d2b;
+  --sidebar-hover-bg: #1d2233;
+  --explorer-bg: #171d2b;
+  --explorer-hover-bg: #1d2233;
+  --explorer-border: #11151e;
+  --tabs-bg: #0f1320;
+  --tab-bg: #171d2b;
+  --transparent-bg: rgba(15, 19, 32, 0.2);
+  --tab-active-bg: #1d2233;
+  --tab-border: #0f1320;
+  --bottombar-bg: #0f1320;
+  --bottombar-border: #0f1320;
+  --button-bg: #2da394;
+  --button-text: #0f1320;
+  --bottombar-hover-bg: #1b1e2a;
+  --scrollbar-track-bg: #0f1320;
+  --scrollbar-thumb-bg: #1d2233;
+  --article-bg: #1d2233;
+}

@@ -48,6 +48,13 @@ const SettingsPage = () => {
           theme="night-owl"
           description="A VS Code theme for the night owls out there."
         />
+        <ThemeInfo
+          name="Cyberpunk"
+          icon="/cyberpunk.png"
+          publisher="Erik Bahena"
+          theme="cyberpunk"
+          description="Cyberpunk theme for VS Code."
+        />
       </div>
     </>
   );

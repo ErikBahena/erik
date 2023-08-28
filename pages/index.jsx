@@ -67,9 +67,9 @@ export default function HomePage() {
                             <Image
                                 className={styles.picture}
                                 src="/me.JPG"
-                                width={310}
+                                width={290}
                                 priority
-                                height={310}
+                                height={290}
                                 alt="Erik's Picture"
                             />
                         </div>

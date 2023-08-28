@@ -18,8 +18,8 @@ const contactItems = [
   },
   {
     social: 'Website',
-    link: 'erik.tech',
-    href: 'https://erik.tech',
+    link: 'erikbahena.com',
+    href: 'https://erikbahena.com',
   },
 ];
 
