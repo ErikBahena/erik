@@ -4,7 +4,6 @@ import RepoCard from '../components/RepoCard';
 import styles from '../styles/GithubPage.module.css';
 
 const GithubPage = ({ repos, user }) => {
-  // console.log(repos);
   const theme = {
     level0: '#161B22',
     level1: '#0e4429',
@@ -35,7 +34,7 @@ const GithubPage = ({ repos, user }) => {
           </div>
         </div>
       </a>
-      <div> <center><h3>My Most Popular Repositories on Github</h3></center></div>
+      <div> <center><h3>My Favorite Repositories on Github</h3></center></div>
       <div className={styles.container}>
         {repos.map((repo) => (
           <RepoCard key={repo.id} repo={repo} />
@@ -64,26 +63,14 @@ export async function getStaticProps() {
   const user = await userRes.json();
 
   const repoRes = await fetch(
-    `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/repos?per_page=100`,
+    `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/repos?per_page=60`,
   );
   let repos = await repoRes.json();
 
-  repos = repos
-    .sort((a, b) => {
-      if (a.html_url.includes('EESTech') || a.html_url.includes('COSC')) {
-        return b
-      }
-      if (b.html_url.includes('EESTech') || b.html_url.includes('COSC')) {
-        return a
-      }
-
-      return (b.stargazers_count + b.watchers_count + b.forks_count) - (a.stargazers_count + a.watchers_count + a.forks_count)
-    })
-    .slice(0, 8);
+  repos = repos.filter((repo) => repo.topics.includes('portfolio'));
 
   return {
     props: { title: 'GitHub', repos, user },
-    revalidate: 10,
   };
 }
 
