@@ -20,33 +20,52 @@ export default function HomePage() {
                                 <div className={styles.content}>
                                     <h4>Skill Set</h4>
                                     <div className={styles.tags}>
-                                        <span key='JavaScript' className='JavaScript'>
-                                            JavaScript
-                                        </span>
-                                        <span key='React-js' className='React-js'>
-                                            React.js
-                                        </span>
-                                        <span key='Python' className='Python'>
-                                            Python
-                                        </span>
-                                        <span key='Html' className='Html'>
-                                            Html
-                                        </span>
-                                        <span key='Css' className='Css'>
-                                            Css
-                                        </span>
-                                        <span key='Tailwind-Css' className='Tailwind-Css'>
-                                            Tailwind Css
-                                        </span>
-                                        <span key='SQL' className='SQL'>
-                                            SQL
-                                        </span>
-                                        <span key='Software-Design' className='Software-Design'>
-                                            Software-Design
-                                        </span>
-                                        <span key='APIs' className='APIs'>
-                                            APIs
-                                        </span>
+                                        <Link href="/projects?tag=JavaScript">
+                                            <span key='JavaScript' className='JavaScript'>
+                                                <a href="/projects?tag=JavaScript">JavaScript</a>
+                                            </span>
+                                        </Link>
+                                        <Link href="/projects?tag=React-js">
+                                            <span key='React-js' className='React-js'>
+                                                <a href="/projects?tag=React-js">React.js</a>
+                                            </span>
+                                        </Link>
+                                        <Link href="/projects?tag=Python">
+                                            <span key='Python' className='Python'>
+                                                <a href="/projects?tag=Python">Python</a>
+                                            </span>
+                                        </Link>
+                                        <Link href="/projects?tag=Html">
+                                            <span key='Html' className='Html'>
+                                                <a href="/projects?tag=Html">Html</a>
+                                            </span>
+                                        </Link>
+                                        <Link href="/projects?tag=Css">
+                                            <span key='Css' className='Css'>
+                                                <a href="/projects?tag=Css">Css</a>
+                                            </span>
+                                        </Link>
+                                        <Link href="/projects?tag=Tailwind-Css">
+                                            <span key='Tailwind-Css' className='Tailwind-Css'>
+                                                <a href="/projects?tag=Tailwind-Css">Tailwind Css</a>
+                                            </span>
+                                        </Link>
+                                        <Link href="/projects?tag=SQL">
+                                            <span key='SQL' className='SQL'>
+                                                <a href="/projects?tag=SQL">SQL</a>
+                                            </span>
+                                        </Link>
+                                        <Link href="/projects?tag=Software-Design">
+                                            <span key='Software-Design' className='Software-Design'>
+                                                <a href="/projects?tag=Software-Design">Software-Design</a>
+                                            </span>
+                                        </Link>
+                                        <Link href="/projects?tag=APIs">
+                                            <span key='APIs' className='APIs'>
+                                                <a href="/projects?tag=APIs">APIs</a>
+                                            </span>
+                                        </Link>
+
                                     </div>
                                 </div>
                             </div>
