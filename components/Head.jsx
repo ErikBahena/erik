@@ -10,7 +10,7 @@ const CustomHead = ({ title }) => {
       />
       <meta
         name="keywords"
-        content="kostas georgiou, kostas, georgiou, data scientist portfolio, machine learning engineer, kostas georgiou portfolio, vscode-portfolio"
+        content="erik bahena, erik, bahena, software portfolio, software engineer portfolio, web engineer, web developer, erik bahena portfolio, vscode-portfolio"
       />
       <meta property="og:title" content="Erik Bahena's Portfolio" />
       <meta
